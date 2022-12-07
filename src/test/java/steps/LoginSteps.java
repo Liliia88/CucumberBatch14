@@ -25,7 +25,7 @@ public class LoginSteps extends CommonMethods {
         //driver.manage().window().maximize();
     }
 
-    @When("user enters username and password")
+    @When("user enters valid username and valid password")
     public void user_enters_username_and_password() {
         WebElement userName = driver.findElement(By.xpath("//input[@id = 'txtUsername']"));
         userName.sendKeys(ConfigReader.getPropertyValue("username"));
