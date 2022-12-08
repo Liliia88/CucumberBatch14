@@ -11,10 +11,11 @@ import org.junit.runner.RunWith;
         //when you set dry run to true, it stops actual execution
         //it will quickly scan all the gherkin steps whether they are implemented or not
         //when we set dry run to false, it starts execution again
+        //dryRun true - will run all methods implemented and unimplemented
         dryRun = false,
-        tags = "@sprint3 or @sprint1",
+        tags = "@tc1103",
         //to remove irrelavant information from console, you need to set monochrome to true
-        monochrome = true,
+        monochrome = false,
         //pretty keywords prints the steps in the console to increase readability
         plugin = {"pretty"}
 )
