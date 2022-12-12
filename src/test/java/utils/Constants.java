@@ -5,6 +5,8 @@ public class Constants {
     public static final int EXPLICIT_WAIT = 30;
     public static final int IMPLICIT_WAIT = 10;
 
+    public static final String TESTDATA_FILEPATH =
+            System.getProperty("user.dir") + "/src/test/resources/testdata/CucumberFirst.xlsx";
 }
 //provide the path to config.properties (where we have our data to use)
 //constants - variable that will not gonna be changed

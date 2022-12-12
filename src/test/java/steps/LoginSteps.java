@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoginPage;
 import utils.CommonMethods;
 import utils.ConfigReader;
+import org.junit.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -76,6 +77,16 @@ public class LoginSteps extends CommonMethods {
     @Then("error message displayed")
     public void error_message_displayed() {
         System.out.println("Error message displayed");
+    }
+
+    @When("user enters different {string} and {string} and verify the {string} for it")
+    public void user_enters_different_and_and_verify_the_for_it(String username, String password, String errorMessage) {
+        sendText(login.usernameTextField, username);
+        sendText(login.passwordTextField, password);
+        click(login.loginButton);
+
+        String errorActual =  login.errorMessage.getText();
+        Assert.assertEquals(errorMessage, errorActual);
     }
 
 }
