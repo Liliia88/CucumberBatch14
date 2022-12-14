@@ -35,6 +35,10 @@ public class AddEmployeePage extends CommonMethods {
     @FindBy(id = "btnSave")
     public WebElement saveButton;
 
+    @FindBy(id = "employeeId")
+    public WebElement empIdLocator;
+
+
     public AddEmployeePage(){
         //page factory is the concept of selenium which we use to implement page
         // object model design pattern which is respnsible to initialize all the objects

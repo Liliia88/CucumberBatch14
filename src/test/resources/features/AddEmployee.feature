@@ -36,9 +36,9 @@ Feature: Add Employee
   Scenario: Adding multiple employees using data table
     When user adds multiple employees and verify they are added successfully
       |firstName|middleName|lastName|
-      |zara    |MS        |camilullah|
-      |birgul  |MS        |ozgin     |
-      |alina   |MS        |bob       |
+      |petr    |MS        |arabic|
+      |zdenka  |MS        |moroccon     |
+      |stepan   |MS        |russian       |
 
   @excel
   Scenario: Adding multiple employees using excel file
