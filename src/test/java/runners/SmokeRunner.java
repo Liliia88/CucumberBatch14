@@ -26,5 +26,9 @@ import org.junit.runner.RunWith;
 public class SmokeRunner {
 
 }
-//regression -all testes will be executed
+//smoke test - means you execute all scenarios that cover all kea functionality of application
+//regression -all testes will be executed (end to end)
+//dependecies - give u all arg files
+//plugins give you all functionality
+
 
