@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         //when we set dry run to false, it starts execution again
         //dryRun true - will run all methods implemented and unimplemented
         dryRun = false,
-        tags = "@tc1101",
+        tags = "@NubiaSkills",
         //to remove irrelavant information from console, you need to set monochrome to true
         monochrome = true,
         //pretty keywords prints the steps in the console to increase readability

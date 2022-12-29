@@ -1,9 +1,6 @@
 package steps;
 
-import pages.AddEmployeePage;
-import pages.DashboardPage;
-import pages.EmployeeListPage;
-import pages.LoginPage;
+import pages.*;
 
 public class PageInitializer {
 
@@ -12,12 +9,15 @@ public class PageInitializer {
     public static AddEmployeePage addEmployee;
 
     public static EmployeeListPage employeeList;
+    public static QualificationsPage employeeInfo;
+
 
     public static void initializePageObjects(){
         login = new LoginPage();
         dashboard = new DashboardPage();
         addEmployee = new AddEmployeePage();
         employeeList= new EmployeeListPage();
+        employeeInfo = new QualificationsPage ();
 
     }
 

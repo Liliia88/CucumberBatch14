@@ -211,5 +211,11 @@ maven lifecycle -
 mvn test
 mvn clean
 
+scenario outline: you dont need for loop
+if employee.get("firstName") - use name of variable from scenario
+
+
+non java folder - there we create directories, not classes
+
 
 

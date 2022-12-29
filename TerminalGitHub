@@ -1,0 +1,57 @@
+
+ configuration of git:
+ 1. Open git bash/terminal
+ 2. git config --global user.name "username"
+ 3. git config --global user.email "emailaddressforgithubaccount"
+
+
+
+ Tracking our first project using Git:
+
+ -Open eclipse and create a new project.
+
+ step 1: decide where to create the repository (CHOOSE THE RIGHT LOCATION)
+ - never make subrepository.
+ - make sure that your repo is inside you project folder.
+ working directory of the project is the location where all the files and folders
+ regarding that project are placed.
+
+ step2: navigate our terminal to that location
+
+ step 3: create the repository -> git init
+
+ step 4: check the status of the repository -> git status
+
+ step 5: track all the files (ADD ALL FILES TO STAGING AREA) -> git add .
+ to add file/folder to staging area - git add src
+
+ step 6: move all files to the repository git commit -m "first commit"
+
+ (command shift . - TO ADD HIDDEN FOLDERS)
+
+  (github link personal)
+
+
+
+If I have a problem:
+git remote set-url origin https://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@github.com/Liliia88/https://github.com/Liliia88/Batch14.git
+Password:
+Baikonur88
+
+
+ 1/create a new remote repository on a github
+ 2. establish the connection by using command -> git remote add origin (plus the link)
+  ( - add origin URL, copy from github)
+ 3. to check that the connection has been established -> git remote -v
+ 4. once connection is there you must run the command -> git branch -M main (only once when create a new repository)
+ 5. git push -u origin main (only fist time)
+
+-git remote remove origin ( to delete the previous repo)
+-git remote -v : (to check)
+
+if i have already repository:
+git add .
+git commit -m "..."
+git push
+..
+...
